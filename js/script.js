@@ -17,8 +17,10 @@ for(let i=0 ; i < mail.length ; i++){
 //altrimenti stampare "Attenzione! email non corretta"
 if(flag){
     console.log('Benvenuto :D');
-    htmlElement.innerHTML='Benvenuto :D';
+    htmlElement.innerHTML+='<div>Benvenuto :D</div>';
 }else{
     console.log('Attenzione! email non corretta')
-    htmlElement.innerHTML='Attenzione! email non corretta';
+    htmlElement.innerHTML+='<div>Attenzione! email non corretta</div>';
 }
+
+//-----------------------------------------------------------
