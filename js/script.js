@@ -35,7 +35,7 @@ const computer = dado[Math.floor(Math.random() * dado.length)];
 console.log(computer);
 htmlElement2.innerHTML+=`<div>computer: ${computer}</div>`;
 //eseguo un controllo ovvero se(if) elemento random generato dall' utente > elemento random generato dal computer
-//stampare che vince utente , altrimenti se è < vince il computer , in caso di due numeri pari si stampa un pareggio
+//stampare che vince utente , altrimenti se è < vince il computer , in caso di due numeri uguali , stampa un pareggio.
 if(utente > computer){
     console.log('Hai vinto!');
     htmlElement2.innerHTML+=`<div>Hai Vinto :D</div>`;
