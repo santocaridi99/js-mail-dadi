@@ -33,7 +33,7 @@ console.log(utente);
 htmlElement2.innerHTML=`<div>utente: ${utente}</div>`;
 const computer = dado[Math.floor(Math.random() * dado.length)];
 console.log(computer);
-htmlElement2.innerHTML+=`<div>utente: ${computer}</div>`;
+htmlElement2.innerHTML+=`<div>computer: ${computer}</div>`;
 //poi eseguo un controllo ovvero se(if) l'elemento randomgenerato1 è più grande di elemento generato2
 //stampare vince(quello con elemento randomgenerato1) altrimenti stampa che vince l'altro
 if(utente > computer){
