@@ -4,10 +4,10 @@ const mail = ['utente1@gmail.com','utente2@gmail.com','utente3@gmail.com','utent
 const userMail = prompt('inserisci la tua e-mail :D');
 let htmlElement = document.getElementById('output');
 htmlElement.innerHTML=`email: ${userMail}`;
-//dichiaro un flag in false che in caso l'utente sarà presente in true
+//dichiaro un flag inizializzato false.
 flag = false;
 //creo un for  dove l' indice scorrerà tutta la lista
-//se l'email corrisponde allora il valore del flag diventerà vero
+//se l'email corrisponde , allora il valore del flag diventerà vero.
 for(let i=0 ; i < mail.length ; i++){
     if(userMail.toLowerCase() === mail[i].toLowerCase()){
         flag = true;
@@ -34,8 +34,8 @@ htmlElement2.innerHTML=`<div>utente: ${utente}</div>`;
 const computer = dado[Math.floor(Math.random() * dado.length)];
 console.log(computer);
 htmlElement2.innerHTML+=`<div>computer: ${computer}</div>`;
-//poi eseguo un controllo ovvero se(if) l'elemento randomgenerato1 è più grande di elemento generato2
-//stampare vince(quello con elemento randomgenerato1) altrimenti stampa che vince l'altro
+//eseguo un controllo ovvero se(if) elemento random generato dall' utente > elemento random generato dal computer
+//stampare che vince utente , altrimenti se è < vince il computer , in caso di due numeri pari si stampa un pareggio
 if(utente > computer){
     console.log('Hai vinto!');
     htmlElement2.innerHTML+=`<div>Hai Vinto :D</div>`;
